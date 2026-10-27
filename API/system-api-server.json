@@ -12,7 +12,8 @@
       "url": "https://www.shure.com/en-US",
       "email": "support@shure.com"
     },
-    "x-shure-specification-build-number": "0.0.1.86"
+    "x-shure-specification-build-number": "0.0.1.86",
+    "summary": "test1"
   },
   "servers": [
     {
