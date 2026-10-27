@@ -1,0 +1,160 @@
+{
+  "$comment": "Stoplight project sidebar (Table of Contents). See https://docs.stoplight.io/docs/platform/ac20d67e16ae6-project-sidebar. This file lives in the master monorepo and references documentation for every deployment edition. The pipeline runs scripts/toc-filter on this file for each deployment. Only DIVIDERS need `targets`: dividers list the deployments that have any content under them, so per-deployment repos never end up with orphan section headings. Items don't need `targets` — Stoplight silently hides any item whose target file isn't shipped in the downstream repo, and the pipeline's doc-filter / spec-splitter decide which files each repo receives.",
+  "items": [
+    {
+      "type": "divider",
+      "title": "Overview"
+    },
+    {
+      "type": "item",
+      "title": "System API Server — Getting Started",
+      "uri": "docs/Getting-Started.md"
+    },
+    {
+      "type": "item",
+      "title": "System API Cloud — Getting Started",
+      "uri": "docs/Cloud-Getting-Started.md"
+    },
+    {
+      "type": "divider",
+      "title": "Authorization"
+    },
+    {
+      "type": "item",
+      "title": "Server: API Authorization",
+      "uri": "docs/API-Authorization.md"
+    },
+    {
+      "type": "item",
+      "title": "Server: API over HTTPS",
+      "uri": "docs/API-HTTPS.md"
+    },
+    {
+      "type": "item",
+      "title": "Cloud: OAuth 2.0 Authorization",
+      "uri": "docs/Cloud-OAuth-Authorization.md"
+    },
+    {
+      "type": "divider",
+      "title": "Realtime & Subscriptions"
+    },
+    {
+      "type": "item",
+      "title": "Server: WebSocket FAQs",
+      "uri": "docs/WebSocket-FAQs.md"
+    },
+    {
+      "type": "item",
+      "title": "Cloud: WebSocket Subscriptions Guide",
+      "uri": "docs/Cloud-WebSocket-Guide.md"
+    },
+    {
+      "type": "divider",
+      "title": "Working With Devices"
+    },
+    {
+      "type": "item",
+      "title": "Server: Device Discovery Lifecycle",
+      "uri": "docs/Device-Discovery-Lifecycle.md"
+    },
+    {
+      "type": "item",
+      "title": "Cloud: Device Discovery Lifecycle",
+      "uri": "docs/Cloud-Device-Discovery-Lifecycle.md"
+    },
+    {
+      "type": "item",
+      "title": "Server: Manual Device Discovery",
+      "uri": "docs/Manual-Device-Discovery.md"
+    },
+    {
+      "type": "item",
+      "title": "Pagination",
+      "uri": "docs/Pagination.md"
+    },
+    {
+      "type": "item",
+      "title": "Cloud Batch Guide",
+      "uri": "docs/Cloud-Batch-Guide.md"
+    },
+    {
+      "type": "divider",
+      "title": "Device Capabilities"
+    },
+    {
+      "type": "item",
+      "title": "Device Authentication",
+      "uri": "docs/capabilities/Device-Authentication.md"
+    },
+    {
+      "type": "item",
+      "title": "Device Audio Encryption",
+      "uri": "docs/capabilities/Device-Audio-Encryption-Guide.md"
+    },
+    {
+      "type": "item",
+      "title": "Server: Firmware Update",
+      "uri": "docs/capabilities/Firmware-Update-Guide.md"
+    },
+    {
+      "type": "item",
+      "title": "Cloud: Firmware Update",
+      "uri": "docs/Cloud-Firmware-Update-Guide.md"
+    },
+    {
+      "type": "item",
+      "title": "IntelliMix Room Licensing",
+      "uri": "docs/capabilities/IntelliMix-Room-Licensing-Guide.md"
+    },
+    {
+      "type": "divider",
+      "title": "API Reference"
+    },
+    {
+      "type": "item",
+      "$comment": "Master-only placeholder so previewing the monorepo in Stoplight renders the un-split spec. Downstream repos do not ship API/System-API.json, so Stoplight silently hides this entry there.",
+      "title": "System API (OpenAPI)",
+      "uri": "API/System-API.json"
+    },
+    {
+      "type": "item",
+      "title": "System API — Server (OpenAPI)",
+      "uri": "API/system-api-server.json"
+    },
+    {
+      "type": "item",
+      "title": "System API — Cloud (OpenAPI)",
+      "uri": "API/system-api-cloud.json"
+    },
+    {
+      "type": "item",
+      "title": "System API — Motiv (OpenAPI)",
+      "uri": "API/system-api-motiv.json"
+    },
+    {
+      "type": "item",
+      "title": "Device API — MXA920 (OpenAPI)",
+      "uri": "API/device-api-mxa920.json"
+    },
+    {
+      "type": "item",
+      "title": "Device API — MXA920 On-Device (OpenAPI)",
+      "uri": "API/device-api-mxa920-on-device-api.json"
+    },
+    {
+      "type": "item",
+      "title": "Device API — MXA902 (OpenAPI)",
+      "uri": "API/device-api-mxa902.json"
+    },
+    {
+      "type": "item",
+      "title": "Device API — MXA925 (OpenAPI)",
+      "uri": "API/device-api-mxa925.json"
+    },
+    {
+      "type": "item",
+      "title": "Device API — P600 (OpenAPI)",
+      "uri": "API/device-api-p600.json"
+    }
+  ]
+}
